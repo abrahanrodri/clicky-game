@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Card from "./components/Card";
+import Card from "./components/Card/index.js";
 import Wrapper from "./components/Wrapper";
-
+import friends from "./friends.json";
+import './App.css';
 
 function App() {
   return (
