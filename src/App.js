@@ -1,4 +1,4 @@
-import React , { Component } from 'react';
+import React, { Component } from 'react';
 // import logo from './logo.svg';
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
@@ -16,7 +16,7 @@ class App extends Component {
   };
   clickPicture = id => {
     const shuffledArray = this.shuffleArray(friends);
-    this.setState({ cards: shuffledArray });
+    this.setState({ friends: shuffledArray });
 
     if (this.state.array.includes(id)) {
       this.setState({
@@ -49,10 +49,7 @@ class App extends Component {
     }
     return picturesArray;
   };
-
-  
   render() {
-    console.log(this.state.cards)
     return (
       <div className="App">
         <header className="App-header">
@@ -76,8 +73,7 @@ class App extends Component {
         </h3>
         <Wrapper
           shakeWrapper={this.state.shake}
-          pictures={this.state.cards.map(picture => (
-            
+          pictures={this.state.friends.map(picture => (
             <Card
               clickPicture={this.clickPicture}
               id={picture.id}
@@ -86,7 +82,6 @@ class App extends Component {
               image={picture.image}
             />
           ))}
-          
         />
       </div>
     );
