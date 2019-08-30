@@ -12,7 +12,7 @@ class App extends Component {
     topScore: 0,
     score: 0,
     message: "",
-    shake: "false"
+    // shake: "false"
   };
   clickPicture = id => {
     const shuffledArray = this.shuffleArray(friends);
@@ -23,14 +23,12 @@ class App extends Component {
         score: 0,
         array: [],
         message: "Wrong! Click an image to start over!",
-        shake: "true"
       });
     } else {
       this.setState({
         array: this.state.array.concat([id]),
         score: this.state.score + 1,
         message: "Correct! Keep going!",
-        shake: "false"
       });
     }
 
@@ -72,7 +70,6 @@ class App extends Component {
           </p>
         </h3>
         <Wrapper
-          shakeWrapper={this.state.shake}
           pictures={this.state.friends.map(picture => (
             <Card
               clickPicture={this.clickPicture}

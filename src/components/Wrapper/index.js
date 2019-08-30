@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 const Wrapper = props => (
-  <div className={props.shakeWrapper === "true" ? "wrapperShake" : "wrapper"}>
+  <div className="wrapper">
     {props.pictures}
   </div>
 );
