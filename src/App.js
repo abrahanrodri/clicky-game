@@ -52,7 +52,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">
-            CARTOON NETWORK CLICKY GAME
+            CARTOON 90s CLICKY GAME
           </h1>
         </header>
         <h3 className="App-intro">
