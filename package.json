@@ -1,6 +1,10 @@
 {
   "name": "clicky-game",
-  "version": "0.1.0",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+   "node": "12.11.1"
+   },
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
@@ -8,6 +12,7 @@
     "react-scripts": "^3.4.3"
   },
   "scripts": {
+    "start": "node index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -26,9 +31,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "scripts": {
-   "start": "node index.js"
-}
+    ]
   }
 }
