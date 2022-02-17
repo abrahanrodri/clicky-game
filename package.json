@@ -2,9 +2,6 @@
   "name": "clicky-game",
   "description": "a really cool app",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.11.1"
-  },
   "private": true,
   "dependencies": {
     "react": "^16.9.0",

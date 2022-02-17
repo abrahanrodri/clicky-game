@@ -5,6 +5,7 @@ import Wrapper from "./components/Wrapper";
 import friends from "./friends.json";
 import './App.css';
 
+//hush
 class App extends Component {
   state = {
     friends,
